@@ -11,7 +11,7 @@ public class SumatorController {
 
     @GetMapping("/sumator")
     public String index() {
-        return "sumator";
+        return "sumator/index";
     }
 
     @PostMapping("/sumator")
@@ -21,6 +21,6 @@ public class SumatorController {
 
         double result = Double.parseDouble(number1) + Double.parseDouble(number2);
         model.addAttribute("result", result);
-        return "sumator";
+        return "sumator/index";
     }
 }

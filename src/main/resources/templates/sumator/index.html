@@ -1,0 +1,19 @@
+<!doctype html>
+<html lang="ru" xmlns:th="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="/css/style.css">
+    <title>Сумматор</title>
+</head>
+<body>
+<h1>Сумматор</h1>
+<form method="post" action="/sumator">
+    <input type="text" name="number1" placeholder="Enter first number" th:value="${number1}">
+    <label for="number2">+</label>
+    <input type="text" name="number2" placeholder="Enter second number" th:value="${number2}">
+    <label for="result">=</label>
+    <input type="text" name="result" placeholder="Result" th:value="${result}">
+    <button type="submit" value="Calculate">Подсчитать</button>
+</form>
+</body>
+</html>
